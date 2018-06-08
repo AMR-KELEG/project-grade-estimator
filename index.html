@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+	<title>Project Rubric</title>
+</head>
+<body>
+	<link rel ='stylesheet' type-='text/css' href='rubric2.css'/>
+	<script type='text/javascript' src='script.js'></script>
+
+	<table id='Table' style='width:90%; margin:auto' border='2' width='1400' cellpadding='10' cellspacing='5'>
+		<tr id='Q1' class='Question'>
+			<td id = 'score' score=0></td>
+			<td id = 'A' score='1' onclick='updateScore(this)'>
+				'A'
+			</td>
+			<td id = 'B' score='2' onclick='updateScore(this)'>
+				'B'
+			</td>
+			<td id = 'C' score='5' onclick='updateScore(this)'>
+				'C'
+			</td>
+			<td id = 'D' score='4' onclick='updateScore(this)'>
+				'D'
+			</td>
+		</tr>
+	</table>
+
+	<hr>
+	<div id='total_score' score=0>0</div>
+
+</body>
+<html>
