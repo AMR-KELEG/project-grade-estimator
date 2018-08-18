@@ -3,10 +3,16 @@
 	<title>Project Rubric</title>
 </head>
 <body>
-	<!-- link rel ='stylesheet' type-='text/css' href='rubric2.css' -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script type='text/javascript' src='script.js'></script>
-
-	<table id='Table' style='width:90%; margin:auto' border='2' width='1400' cellpadding='10' cellspacing='5'>
+	<div class="jumbotron text-center">
+	  <h1>Project</h1>
+	  <p>Project's rubric to help you with your implementation!</p> 
+	</div>
+  
+	<table id='Table' class='table table-hover' style='width:90%; margin:auto' border='2' width='1400' cellpadding='10' cellspacing='5'>
+	<thead>		
 		<tr>
 		<th>Question</th>
 		<th>A</th>
@@ -15,6 +21,7 @@
 		<th>D</th>
 		<th>Score</th>
 		</tr>
+	</thead>
 		<tr id='Q1' class='Question'>
 			<td id ='Q'>
 			Template Question
@@ -71,8 +78,16 @@
 		</tr>
 	</table>
 
-	<hr>
-	<div id = 'total_score' score=0>0</div>
-
+	<div class='container'>
+		<hr>
+		<div class='row'>
+		<div class='col-sm-2 col-sm-offset-4'>
+		<h3>Total Score:</h3>
+		</div>
+		<div class='col-sm-1'>
+		<h3 id = 'total_score' score=0>0</h3>
+		</div>
+		</div>
+	</div>
 </body>
 <html>
